@@ -1,0 +1,147 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     Machine Int-Data Set - No Age
+Instances:    150
+Attributes:   9
+              ethnicity
+              gender
+              status
+              frnd_count
+              sexuality
+              tenure
+              pop
+              post_count
+              edu_lvl
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+gender = m
+|   pop = <50000
+|   |   post_count <= 3: bachelors (14.0/2.0)
+|   |   post_count > 3
+|   |   |   frnd_count = >500
+|   |   |   |   ethnicity = black
+|   |   |   |   |   status = single
+|   |   |   |   |   |   sexuality = straight
+|   |   |   |   |   |   |   tenure <= 5: bachelors (2.0)
+|   |   |   |   |   |   |   tenure > 5: masters (2.0)
+|   |   |   |   |   |   sexuality = gay: bachelors (2.0)
+|   |   |   |   |   status = married: masters (3.0)
+|   |   |   |   |   status = relationship: bachelors (1.0)
+|   |   |   |   ethnicity = white
+|   |   |   |   |   status = single: highschool (2.0)
+|   |   |   |   |   status = married: masters (2.0)
+|   |   |   |   |   status = relationship: masters (3.0)
+|   |   |   |   ethnicity = hispanic: bachelors (3.0/1.0)
+|   |   |   |   ethnicity = asian: masters (0.0)
+|   |   |   frnd_count = <500: bachelors (9.0/3.0)
+|   pop = 1mil-5mil
+|   |   sexuality = straight: masters (2.0/1.0)
+|   |   sexuality = gay: bachelors (2.0)
+|   pop = 50000-100000
+|   |   frnd_count = >500
+|   |   |   post_count <= 4: highschool (2.0)
+|   |   |   post_count > 4: bachelors (3.0)
+|   |   frnd_count = <500: bachelors (10.0/1.0)
+|   pop = 500000-1mil: masters (1.0)
+|   pop = 100000-500000
+|   |   post_count <= 6
+|   |   |   tenure <= 9: masters (2.0)
+|   |   |   tenure > 9: bachelors (8.0/1.0)
+|   |   post_count > 6: masters (4.0/1.0)
+gender = f
+|   sexuality = straight
+|   |   tenure <= 12
+|   |   |   status = single
+|   |   |   |   pop = <50000
+|   |   |   |   |   frnd_count = >500
+|   |   |   |   |   |   post_count <= 7
+|   |   |   |   |   |   |   ethnicity = black
+|   |   |   |   |   |   |   |   tenure <= 8: highschool (2.0)
+|   |   |   |   |   |   |   |   tenure > 8: masters (3.0/1.0)
+|   |   |   |   |   |   |   ethnicity = white: highschool (2.0)
+|   |   |   |   |   |   |   ethnicity = hispanic: highschool (0.0)
+|   |   |   |   |   |   |   ethnicity = asian: highschool (0.0)
+|   |   |   |   |   |   post_count > 7: bachelors (3.0/1.0)
+|   |   |   |   |   frnd_count = <500: bachelors (5.0)
+|   |   |   |   pop = 1mil-5mil: bachelors (0.0)
+|   |   |   |   pop = 50000-100000: highschool (2.0/1.0)
+|   |   |   |   pop = 500000-1mil: masters (1.0)
+|   |   |   |   pop = 100000-500000: bachelors (3.0)
+|   |   |   status = married
+|   |   |   |   frnd_count = >500
+|   |   |   |   |   tenure <= 6
+|   |   |   |   |   |   post_count <= 3: bachelors (2.0)
+|   |   |   |   |   |   post_count > 3: phd (2.0)
+|   |   |   |   |   tenure > 6
+|   |   |   |   |   |   post_count <= 7: masters (10.0)
+|   |   |   |   |   |   post_count > 7: bachelors (2.0)
+|   |   |   |   frnd_count = <500
+|   |   |   |   |   pop = <50000
+|   |   |   |   |   |   post_count <= 8: high school (3.0)
+|   |   |   |   |   |   post_count > 8: masters (2.0)
+|   |   |   |   |   pop = 1mil-5mil: high school (0.0)
+|   |   |   |   |   pop = 50000-100000
+|   |   |   |   |   |   ethnicity = black: bachelors (0.0)
+|   |   |   |   |   |   ethnicity = white: bachelors (2.0)
+|   |   |   |   |   |   ethnicity = hispanic: bachelors (0.0)
+|   |   |   |   |   |   ethnicity = asian: high school (2.0)
+|   |   |   |   |   pop = 500000-1mil: high school (0.0)
+|   |   |   |   |   pop = 100000-500000: masters (1.0)
+|   |   |   status = relationship
+|   |   |   |   pop = <50000: masters (3.0/1.0)
+|   |   |   |   pop = 1mil-5mil: masters (0.0)
+|   |   |   |   pop = 50000-100000: masters (2.0)
+|   |   |   |   pop = 500000-1mil: bachelors (1.0)
+|   |   |   |   pop = 100000-500000: high school (2.0)
+|   |   tenure > 12: bachelors (9.0)
+|   sexuality = gay
+|   |   tenure <= 9: high school (7.0)
+|   |   tenure > 9: masters (2.0)
+
+Number of Leaves  : 	53
+
+Size of the tree : 	84
+
+
+Time taken to build model: 0.04 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          16               53.3333 %
+Incorrectly Classified Instances        14               46.6667 %
+Kappa statistic                          0.2771
+Mean absolute error                      0.1827
+Root mean squared error                  0.3757
+Relative absolute error                 67.5542 %
+Root relative squared error            101.0645 %
+Total Number of Instances               30     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.583    0.444    0.467      0.583    0.519      0.136    0.660     0.643     masters
+                 0.583    0.222    0.636      0.583    0.609      0.367    0.755     0.588     bachelors
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     highschool
+                 0.000    0.069    0.000      0.000    0.000      -0.050   0.466     0.033     phd
+                 0.250    0.000    1.000      0.250    0.400      0.473    0.938     0.716     high school
+Weighted Avg.    0.533    0.269    0.608      0.533    0.538      0.296    0.740     0.622     
+
+=== Confusion Matrix ===
+
+ a b c d e   <-- classified as
+ 7 4 0 1 0 | a = masters
+ 5 7 0 0 0 | b = bachelors
+ 0 0 1 0 0 | c = highschool
+ 1 0 0 0 0 | d = phd
+ 2 0 0 1 1 | e = high school
+
