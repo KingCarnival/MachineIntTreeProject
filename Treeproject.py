@@ -6,6 +6,13 @@ Created on Sat Apr 13 17:15:49 2019
 
 """
 #Decision Tree implementation 
+#Algorthm for tree implementation:
+    # 1. Enter gender
+            # if gender== "m"
+              # run(edu_m)
+            # elif gender=="f"
+              #run(edu_f)
+
 
 #Male path path:
 def edu_m(eth=str(),gender=str(),status=str(),fr_count=str(),sex=str(),tenure=int(),pop=str(),post_count=int()):
