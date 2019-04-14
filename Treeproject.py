@@ -19,7 +19,7 @@ def edu_m(eth=str(),gender=str(),status=str(),fr_count=str(),sex=str(),tenure=in
     if gender =="m" and pop== "<50000" and post_count<=3:
         print("bachelors")
     elif gender =="m" and pop == "<50000" and post_count > 3 and fr_count== ">500"and eth=="black" and status=="single" and sex=="straight" and tenure <=5:
-            print("bachelors")
+        print("bachelors")
     elif gender =="m" and pop == "<50000" and post_count > 3 and fr_count== ">500"and eth=="black" and status=="single" and sex=="straight" and tenure >5:
         print("masters")
     elif gender =="m" and pop == "<50000" and post_count > 3 and fr_count== ">500"and eth=="black" and status=="single" and sex=="gay":
