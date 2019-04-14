@@ -60,3 +60,15 @@ def edu_m(eth=str(),gender=str(),status=str(),fr_count=str(),sex=str(),tenure=in
         print("masters")
     elif gender =="m" and pop == "100000-500000" and post_count >6:
         print("masters")
+
+#Female Path
+def edu_f(eth=str(),gender=str(),status=str(),fr_count=str(),sex=str(),tenure=int(),pop=str(),post_count=int()):
+    if gender == "f" and sex == "gay" and tenure <= 9:
+        print("high school")
+    elif gender == "f" and sex == "gay" and tenure > 9:
+        print("masters")
+    elif gender == "f" and sex == "straight" and tenure > 12:
+        print("bachelors")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "relationship" and pop == "<50000":
+        print("masters")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "relationship" and pop == "1mil-5mil":
