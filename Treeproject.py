@@ -72,3 +72,45 @@ def edu_f(eth=str(),gender=str(),status=str(),fr_count=str(),sex=str(),tenure=in
     elif gender == "f" and sex == "straight" and tenure <= 12 and status == "relationship" and pop == "<50000":
         print("masters")
     elif gender == "f" and sex == "straight" and tenure <= 12 and status == "relationship" and pop == "1mil-5mil":
+        print("masters")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "relationship" and pop == "50000-100000":
+        print("masters")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "relationship" and pop == "500000-1mil":
+        print("bachelors")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "relationship" and pop == "100000-500000":
+        print("high school")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "single" and pop == "1mil-5mil":
+        print("bachelors")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "single" and pop == "50000-100000":
+        print("high school")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "single" and pop == "500000-1mil":
+        print("masters")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "single" and pop == "100000-500000":
+        print("bachelors")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "single" and pop == "<50000" and fr_count == "<500":
+        print("bachelors")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "single" and pop == "<50000" and fr_count == ">500" and post_count > 7:
+        print("bachelors")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "single" and pop == "<50000" and fr_count == ">500" and post_count <= 7 and eth == "white":
+        print("high school")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "single" and pop == "<50000" and fr_count == ">500" and post_count <= 7 and eth == "hispanic":
+        print("high school")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "single" and pop == "<50000" and fr_count == ">500" and post_count <= 7 and eth == "asian":
+        print("high school")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "single" and pop == "<50000" and fr_count == ">500" and post_count <= 7 and eth == "black" and tenure <= 8:
+        print("high school")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "single" and pop == "<50000" and fr_count == ">500" and post_count <= 7 and eth == "black" and tenure > 8:
+        print("masters")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "married" and fr_count == ">500" and tenure <= 6 and post_count <= 3:
+        print("bachelors")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "married" and fr_count == ">500" and tenure <= 6 and post_count > 3:
+        print("phd")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "married" and fr_count == ">500" and tenure > 6 and post_count <= 7:
+        print("masters")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "married" and fr_count == ">500" and tenure > 6 and post_count > 7:
+        print("bachelors")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "married" and fr_count == "<500" and pop == "<50000" and post_count <= 8:
+        print("high school")
+    elif gender == "f" and sex == "straight" and tenure <= 12 and status == "married" and fr_count == "<500" and pop == "<50000" and post_count > 8:
+        print("masters")
+
