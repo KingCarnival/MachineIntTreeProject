@@ -1,0 +1,8 @@
+gender = input("Gender(m or f):")
+population= input("Population:")
+p_count=input("post count:")
+friends=input("Friend Count:")
+ethncity= input("Ethnicity/Race:")
+stat= input("Status(single,relationship,married)")
+ten=input("How long have they been on facebook:")
+sexuality=input("Sexuality(gay or straight):")
