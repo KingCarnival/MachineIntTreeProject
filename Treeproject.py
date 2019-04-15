@@ -132,12 +132,12 @@ def eduLevel():
 
     def getVar():
         gender = input("Gender(m or f):")
-        population= input("Population:")
+        population= input("Population (<50000,50000-100000,100000-500000,500000-1mil,1mil-5mil):")
         p_count=int(input("post count:"))
-        friends=input("Friend Count:")
-        ethncity= input("Ethnicity/Race:")
-        stat= input("Status(single,relationship,married)")
-        ten=int(input("How long have they been on facebook:"))
+        friends=input("Friend Count (>500 or <500):")
+        ethncity= input("Ethnicity/Race (black, hispanic, white, asian):")
+        stat= input("Status(single,relationship,married): ")
+        ten=int(input("How long have they been on facebook: "))
         sexuality=input("Sexuality(gay or straight):")
 
         eth = ethncity
